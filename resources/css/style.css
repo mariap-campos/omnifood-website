@@ -184,6 +184,13 @@ header{
     font-size: 100%;
 }
 
+/* ---------------------------------------------- */
+/*  FEATURES */
+/* ---------------------------------------------- */
+.section-features .long-copy{
+    margin-bottom: 30px;
+}
+
 
 /* ---------------------------------------------- */
 /*  MEALS */
@@ -191,7 +198,6 @@ header{
 
 .section-meals{
     padding: 0;
-
 }
 
 .meals-showcase{
@@ -208,11 +214,22 @@ header{
 .meals-photo{
     width: 100%;
     margin: 0;
+    overflow: hidden;
+    background-color: #000;
+
 
 }
 
 .meals-photo img{
+    opacity: 0.7;
     width: 100%;
     height: auto;
     transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
 }
+
+.meals-photo img:hover{
+    transform: scale(1.03);
+    opacity: 1;
+}
+
