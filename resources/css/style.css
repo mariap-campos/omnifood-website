@@ -14,6 +14,15 @@ html{
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom:1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display:block;
+    height: 0;
+    visibility: hidden;
+}
+
 /* ---------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ---------------------------------------------- */
@@ -68,6 +77,7 @@ h1, h2{
      margin-bottom: 30px;
  }
 
+
  h3{
      font-size: 110%;
      letter-spacing: 1px;
@@ -102,7 +112,7 @@ h1, h2{
     text-decoration: none;
     color: #fff;
     border-radius: 200px;    
-    transition: background-color 0.2s, border 0.2s;
+    transition: background-color 0.2s, border 0.2s, padding 0.2s;
 }
 
 .btn-full:link, .btn-full:visited{
@@ -120,14 +130,17 @@ h1, h2{
 }
 
 .btn-full:hover, .btn-full:active{
-    color: #fff;
     background-color: #a15512;
     border: 1px solid #a15512;
+    padding: 10px 40px;
+
+
 }
 
 .btn-ghost:hover, .btn-ghost:active{
     background-color: rgba(0, 0, 0, 0.6);
     border: 1px solid rgba(0, 0, 0, 0.6);
+    padding: 10px 40px;
 }
 
 /* ---------------------------------------------- */
@@ -216,8 +229,6 @@ header{
     margin: 0;
     overflow: hidden;
     background-color: #000;
-
-
 }
 
 .meals-photo img{
@@ -232,4 +243,57 @@ header{
     transform: scale(1.03);
     opacity: 1;
 }
+
+/* ---------------------------------------------- */
+/*  HOW IT WORKS */
+/* ---------------------------------------------- */
+
+.section-steps{
+    background: #f1f1f1;
+}
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 25px;
+}
+
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen{
+    width: 40%;
+}
+
+
+.works-step{
+    margin-bottom: 50px;
+
+}
+
+.works-step:last-of-type{
+    margin-bottom: 80px;
+}
+
+.works-step div{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 140%;
+    float: left;
+    margin-right: 25px;
+}
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
 
