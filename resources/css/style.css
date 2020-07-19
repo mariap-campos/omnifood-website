@@ -36,6 +36,7 @@ html{
 section {
     padding: 80px 0px;
 }
+
 .box{
     padding: 1%;
 
@@ -52,6 +53,20 @@ section {
     color: #e67e22;
     font-size: 250%;
     display: block;
+}
+
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-size: 120%;
+    color: #e67e22;
+    /*secrets to align icons and text */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px; 
+    margin-right: 10px;
+
 }
 
 
@@ -141,6 +156,21 @@ h1, h2{
     background-color: rgba(0, 0, 0, 0.6);
     border: 1px solid rgba(0, 0, 0, 0.6);
     padding: 10px 40px;
+}
+
+/* ---------------- LINKS ------------*/
+
+a:visited, a:link {
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    color: #e67e22;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+a:hover, a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
 }
 
 /* ---------------------------------------------- */
@@ -290,10 +320,33 @@ header{
     margin-right: 25px;
 }
 
+.btn-app:link, .btn-app:visited {
+    border-bottom: 1px solid transparent;
+
+}
+
 .btn-app img{
     height: 50px;
     width: auto;
     margin-right: 10px;
+
 }
+
+
+/* ---------------------------------------------- */
+/*  CITIES */
+/* ---------------------------------------------- */
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.city-feature{
+    margin-bottom: 5px;
+}
+
+
+
 
 
